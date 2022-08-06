@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "344291198664",
+    "firebase_url": "https://myapplication2-48e0b.firebaseio.com",
+    "project_id": "myapplication2-48e0b",
+    "storage_bucket": "myapplication2-48e0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344291198664:android:a247a49a9851fb34",
+        "android_client_info": {
+          "package_name": "krescendo.sumit.kresc.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344291198664-a9mjggbmqireduaup2e2mkkust1i945b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaqdtDjT5H1kRipcJKotR7sit6y1cSqtA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

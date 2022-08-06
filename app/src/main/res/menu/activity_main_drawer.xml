@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/book"
+            android:icon="@drawable/book"
+            android:title="Book and More" />
+        <item
+            android:id="@+id/softskil"
+            android:icon="@drawable/ltop"
+            android:title="Soft Skills"
+            android:visible="false" />
+        <item
+            android:id="@+id/life"
+            android:icon="@drawable/img2"
+            android:title="Life Topics"
+            android:visible="false" />
+        <item
+            android:icon="@drawable/perana"
+            android:title="Personality Analysis"
+            android:id="@+id/pa" />
+        <item
+            android:id="@+id/quote"
+            android:icon="@drawable/thou"
+            android:title="Quotes"
+            android:visible="false" />
+        <item
+            android:id="@+id/video"
+            android:icon="@drawable/vid"
+            android:title="Video"
+            android:visible="false" />
+        <item
+            android:id="@+id/audio"
+            android:icon="@drawable/img3"
+            android:title="Audio"
+            android:visible="false" />
+        <item android:title="Events"
+            android:id="@+id/event"
+            android:icon="@android:drawable/ic_menu_my_calendar" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:icon="@drawable/aboutus"
+                android:title="About Us"
+                android:id="@+id/aboutus" />
+            <item
+                android:icon="@drawable/contact"
+                android:title="Contact Us"
+                android:id="@+id/contactus" />
+            <item
+                android:icon="@drawable/feedback"
+                android:title="Feedback"
+                android:id="@+id/feedback" />
+            <item android:title="Sign Out"
+                android:id="@+id/logout" />
+
+
+        </menu>
+    </item>
+
+</menu>

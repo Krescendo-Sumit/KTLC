@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="chetana.ngo.chetna.EventRegistration">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/rg">
+
+                <RadioButton
+                    android:text="Self"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb1"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:text="With Others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rb2"
+                    android:layout_weight="1" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:hint="Enter No. Of People"
+                    android:id="@+id/et_nofp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="249dp"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:padding="10dp"
+                    android:hint="Enter Names And Mobile Number"
+                    android:id="@+id/et_details"
+                    android:gravity="top|center_vertical" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:text="Register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFFFFF"
+                android:onClick="register" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

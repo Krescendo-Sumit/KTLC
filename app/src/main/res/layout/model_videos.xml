@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:gravity="left|center"
+    android:background="@drawable/textboxxml">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="150dp">
+
+                <WebView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/web" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/txtgoals"
+                    android:textColor="#91c66b"
+                    android:gravity="center_vertical|center|right"
+                    android:layout_gravity="right"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:text="Large fdgszdfgsfgdgkjhakggagdssfsdfsfsdfsdfsdfsdfs"
+                    android:id="@+id/txtname"
+                    android:gravity="bottom|left|center"
+                    android:typeface="normal"
+                    android:layout_weight="1"
+                    android:textColor="#E85959"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center"
+                    android:background="#bcFFFFFF"
+                    android:padding="8dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txt_play"
+                    android:background="@drawable/vidi"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

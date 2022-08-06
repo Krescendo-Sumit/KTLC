@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AnalysisForm">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        >
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:background="@drawable/head"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar3"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/ll"
+
+            android:layout_width="match_parent"
+            android:background="#bcc7c9cc"
+            android:layout_height="80dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/vid"
+                        android:layout_weight="1"
+                        android:onClick="video"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:padding="5dp" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/img3"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:onClick="audio"
+                        android:padding="5dp" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/thou"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:onClick="thoughts"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/perana"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:onClick="pa"
+                        android:padding="5dp" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/img2"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:onClick="lifetopics"
+                        android:padding="5dp" />
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ltop"
+                        android:layout_weight="1"
+                        android:scaleType="fitCenter"
+                        android:background="#00000000"
+                        android:onClick="softskills"
+                        android:padding="5dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            app:srcCompat="@drawable/arraow"
+            android:background="#00000000"
+            android:onClick="colapse"
+            android:scaleType="fitCenter" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_paname"
+                        android:hint="Name"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:id="@+id/txt_padob"
+                        android:hint="DOB"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_paquali"
+                        android:hint="Qualification"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#4d631816"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_ocurole"
+                        android:hint="Role"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_function"
+                        android:hint="Function"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_paexp"
+                        android:hint="Experience"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_paachiv"
+                        android:hint="Special Achivement"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_pastrengh"
+                        android:hint="Which strength do you think you carry?"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_weakness"
+                        android:hint="Which weakness do you think that you are burdened with?"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="I have ____ friends. "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#4d631816"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_pafriend"
+                        style="@style/Widget.AppCompat.Spinner.DropDown"
+
+                        android:popupBackground="#631816"
+                        android:background="@drawable/newtextbox"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Do you read books?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#4d631816"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_pabook"
+                        android:popupBackground="#631816"
+                        style="@style/Widget.AppCompat.Spinner.DropDown"
+                        android:background="@drawable/newtextbox"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Which kind of books do you read?"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="#4d631816"
+                        android:textColor="#ffffff" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Management"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pamgnt"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Spiritual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_paspiri"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Novel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_panovel"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Poetry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_papoverty"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Autobiography"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_anti"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Self-development"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_paself"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/et_paotherbook"
+                        android:hint="Other Books"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF" />
+
+                    <CheckBox
+                        android:text="News"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_panews"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Sports"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pasport"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_painform"
+                        android:text="Information"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Music"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pamusic"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="General"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pageneral"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Kids program"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pakids"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Movies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pamovies"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/et_othertv"
+                        android:hint="Other Shows"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:text="Which of the following problems do you face today? "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:background="#4d631816"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <CheckBox
+                        android:text="Anger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_paanger"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Frustration"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pafrus"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Inferiority"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_painfer"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Over confidence"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_paoverconf"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:text="Shy "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chk_pashy"
+                        android:padding="10dp" />
+
+                    <TextView
+                        android:text="  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:id="@+id/txt_paotherproblems"
+                        android:hint="Other Problems"
+                        android:background="@drawable/newtextbox"
+                        android:paddingLeft="10dp"
+                        android:minHeight="25dp"
+                        android:textSize="12sp"
+                        android:padding="10dp" />
+
+                    <Button
+                        android:text="Submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="addtoserver"
+                        android:layout_gravity="right"
+                        android:background="@drawable/newbutton"
+                        android:minHeight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

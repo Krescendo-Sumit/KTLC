@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="krescendo.sumit.kresc.myapplication.AudioPlay">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:text="Just a textView"
+            android:background="@drawable/auaa"
+            android:layout_height="250dp"
+            android:gravity="bottom|center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button7"
+                android:layout_weight="1"
+                android:text="Play"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button5"
+                android:layout_weight="1"
+                android:text="Pause"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="pausea" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:layout_weight="1.44"
+                android:text="Resume"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="resumea" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button3"
+                android:layout_weight="1"
+                android:text="Stop"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textColor="@color/colorPrimaryDark"
+                android:onClick="stopa" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/textView2"
+            android:padding="5dp" />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/seekBar"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/txt_coundwon"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            android:textStyle="normal|bold"
+            android:fontFamily="monospace"
+            android:gravity="center" />
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/web" />
+    </LinearLayout>
+
+</RelativeLayout>

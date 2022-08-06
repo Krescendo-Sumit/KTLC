@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1e2e2"
+    android:gravity="top"
+    android:orientation="vertical"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:paddingLeft="10dp"
+    android:paddingBottom="10dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="76dp"
+        android:layout_height="68dp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:background="@color/colorPrimary"
+        android:layout_weight="0.04"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arun Pokhle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txt_headername" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="arun.pokhle@gmail.com"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/txt_headeremail" />
+
+</LinearLayout>

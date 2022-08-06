@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="krescendo.sumit.kresc.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <meta-data
+        android:name="com.parse.push.gcm_sender_id"
+        android:value="id:713419895859" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="Krishna The Life Coach"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".EventViewPage"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Krishna The Life Coach"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Flash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewVideo"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Topic_List"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".List_Sir_Speech"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VideoPlay"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TopicDescription"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContactUs"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LifeTopic"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AudioPlay"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListVideos"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ListThought"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpeechList"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".MyService" />
+
+        <activity
+            android:name=".LifeTopicDescription"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AnalysisForm"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".New_Flash"
+            android:screenOrientation="portrait"></activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".NewLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AudioPlayOnline"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Transaction"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".firebaceservice.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".firebaceservice.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".FirebaseTest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivitySendPushNotification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EventDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpcommingEventsDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OurEvents"
+            android:label="@string/title_activity_our_events"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageCropping"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ErroActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Books"
+            android:theme="@style/AppThemeTitle" />
+        <activity
+            android:name=".EventRegistration"
+            android:theme="@style/AppThemeTitle" />
+        <activity
+            android:name=".Gallery"
+            android:theme="@style/AppThemeTitle" />
+        <activity
+            android:name=".ForgetPassword"
+            android:theme="@style/AppThemeTitle" />
+        <activity
+            android:name=".ProjectAndCreativity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ProjectDescription"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SkillEnhancement"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SkillDescription"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

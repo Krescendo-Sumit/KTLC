@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="krescendo.sumit.kresc.myapplication.NewLogin">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="13">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/img1">
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/img13"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:padding="30dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/middle"
+            android:gravity="bottom|center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#a6FFFFFF"
+                android:gravity="bottom"
+                android:layout_gravity="bottom"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_weight="1">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="60dp">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:hint="Email Id"
+                            android:textAlignment="center"
+                            android:textColorHint="#FFFFFF"
+                            android:textColor="#FFFFFF"
+
+                            android:padding="5dp"
+                            android:background="@drawable/newtextbox"
+                            android:textSize="12sp"
+                            android:minHeight="40dp"
+                            android:id="@+id/et_uname" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="Password"
+                            android:textAlignment="center"
+                            android:textColorHint="#FFFFFF"
+                            android:textColor="#FFFFFF"
+                            style="@style/Widget.AppCompat.EditText"
+                            android:padding="5dp"
+                            android:background="@drawable/newtextbox"
+                            android:textSize="12sp"
+                            android:minHeight="40dp"
+                            android:id="@+id/et_pass" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <Button
+                                android:text="Sign In"
+                                android:onClick="show"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAllCaps="false"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/newbutton"
+                                android:minHeight="26dp"
+                                android:minWidth="100dip"
+                                android:id="@+id/btn_signin" />
+
+                            <TextView
+                                android:text="Forgot Password ?"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#a92725"
+                                android:padding="5dp"
+                                android:onClick="forget" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <Button
+                                android:text="Sign Up"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/btn_signup"
+                                android:textAllCaps="false"
+                                android:gravity="center_vertical|center_horizontal|center"
+                                android:textColor="#FFFFFF"
+                                android:background="@drawable/newbutton"
+                                android:minHeight="26dp"
+                                android:minWidth="100dip"
+                                android:onClick="show" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/img11">
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

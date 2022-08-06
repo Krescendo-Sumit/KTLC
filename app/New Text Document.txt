@@ -1,0 +1,104 @@
+
+C:\Users\user>cd H:\AndroidStudioProjects\MyApplication2\app
+
+C:\Users\user>h:
+
+H:\AndroidStudioProjects\MyApplication2\app>jarsigner -verify -verbose:summary -
+certs krishna.apk
+
+sm      6780 Fri Nov 30 00:00:00 PST 1979 AndroidManifest.xml (and 578 more)
+
+      X.509, CN=sumit suradkar, OU=1, O=krescendo software solutions, L=Aurangab
+ad, ST=Maharashtra, C=91
+      [certificate is valid from 10/20/16 11:26 PM to 10/14/41 11:26 PM]
+      [CertPath not validated: Path does not chain with any of the trust anchors
+]
+
+        1438 Fri Nov 30 00:00:00 PST 1979 META-INF/CERT.RSA (and 1 more)
+
+      (Signature related entries)
+
+s      61377 Fri Nov 30 00:00:00 PST 1979 META-INF/MANIFEST.MF
+
+      X.509, CN=sumit suradkar, OU=1, O=krescendo software solutions, L=Aurangab
+ad, ST=Maharashtra, C=91
+      [certificate is valid from 10/20/16 11:26 PM to 10/14/41 11:26 PM]
+      [CertPath not validated: Path does not chain with any of the trust anchors
+]
+
+
+  s = signature was verified
+  m = entry is listed in manifest
+  k = at least one certificate was found in keystore
+  i = at least one certificate was found in identity scope
+
+jar verified.
+
+Warning:
+This jar contains entries whose certificate chain is not validated.
+This jar contains signatures that does not include a timestamp. Without a timest
+amp, users may not be able to validate this jar after the signer certificate's e
+xpiration date (2041-10-14) or after any future revocation date.
+
+H:\AndroidStudioProjects\MyApplication2\app>^A
+
+
+
+
+
+C:\Users\user>cd H:\AndroidStudioProjects\MyApplication2\app
+
+C:\Users\user>h:
+
+H:\AndroidStudioProjects\MyApplication2\app>jarsigner -verify -verbose:summary -
+certs krishna.apk
+
+sm      6780 Fri Nov 30 00:00:00 PST 1979 AndroidManifest.xml (and 578 more)
+
+      X.509, CN=sumit suradkar, OU=1, O=krescendo software solutions, L=Aurangab
+ad, ST=Maharashtra, C=91
+      [certificate is valid from 10/20/16 11:26 PM to 10/14/41 11:26 PM]
+      [CertPath not validated: Path does not chain with any of the trust anchors
+]
+
+        1438 Fri Nov 30 00:00:00 PST 1979 META-INF/CERT.RSA (and 1 more)
+
+      (Signature related entries)
+
+s      61377 Fri Nov 30 00:00:00 PST 1979 META-INF/MANIFEST.MF
+
+      X.509, CN=sumit suradkar, OU=1, O=krescendo software solutions, L=Aurangab
+ad, ST=Maharashtra, C=91
+      [certificate is valid from 10/20/16 11:26 PM to 10/14/41 11:26 PM]
+      [CertPath not validated: Path does not chain with any of the trust anchors
+]
+
+
+  s = signature was verified
+  m = entry is listed in manifest
+  k = at least one certificate was found in keystore
+  i = at least one certificate was found in identity scope
+
+jar verified.
+
+Warning:
+This jar contains entries whose certificate chain is not validated.
+This jar contains signatures that does not include a timestamp. Without a timest
+amp, users may not be able to validate this jar after the signer certificate's e
+xpiration date (2041-10-14) or after any future revocation date.
+
+H:\AndroidStudioProjects\MyApplication2\app>^A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
